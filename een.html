@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Tutorial</title>
+</head>
+<body>
+
+ <!-- 
+  Deze code is een aangepaste versie van de code gebruikt in de tutorials van Joni De Borger.
+  De code in de tutorial komt niet meer volledig overeen met wat je in de Firebase documentatie vindt.
+  Neem deze tutorials in ieder geval door.
+  https://www.youtube.com/playlist?list=PLPb4sUSvTh1MwqsHVZ-tnSeCSlwEXfWhJ
+ 
+  Ik werk hier nog wel met Webversion 8 in Firebase, NIET met Web version 9
+-->
+
+
+  <form action="" id="form">
+    <input type="text" name="name" id="name">
+    <input type="submit" value="submit">
+  </form>
+
+  <ul id="todos">
+    <li>
+      <input id="checkbox1" type="checkbox" checked name="todoCheckbox" value="id">
+      <label for="checkbox1">My todo template</label>
+      </li>
+  </ul>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="js/main.js" type="module"></script>
+
+</body>
+</html>
